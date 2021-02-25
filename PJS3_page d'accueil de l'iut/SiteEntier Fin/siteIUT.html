@@ -1,0 +1,385 @@
+<!DOCTYPE html">
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styleCSS/styleCSS.css">
+		<title>IUT Paris Descartes | Bienvenue sur le site de l'IUT Paris Descartes</title>
+		<link rel="icon" type="image/png" href="./images/favicon.png"/>
+		<link href="//db.onlinewebfonts.com/c/9d25ea5c587d0f9d470aa9a3634735ea?family=ETmoudles" rel="stylesheet" type="text/css"/>
+		<!-- importer la police Montserrat et ETmodules -->
+		<style> 
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+			@import url('https://db.onlinewebfonts.com/c/9d25ea5c587d0f9d470aa9a3634735ea?family=ETmodules&display=swap');
+		</style>
+		<script>
+			function scroll(){
+			var w = window.outerWidth;
+				if (document.body.scrollTop >= 10) {
+					document.body.classList.add("scrolled");
+				}
+				else {
+					document.body.classList.remove("scrolled");
+				}
+			}
+		</script>
+	</head>
+
+	<body onresize="resize();" onscroll="scroll()" onload="resize()">
+	
+<!----------------------------------------------------------------------------------  PARTIE HEADER  ---------------------------------------------------------------------------------->
+		<div id="top-headerH" class>
+			<div class="containerH">
+				<div id="topbar-links">
+					<div id="social-media">
+						<ul>
+							<li><a href="https://fr-fr.facebook.com/iutparis/" target="_blank"><img src="./images/icon-facebook.png" alt="Facebook"></a>
+							<li><a href="https://twitter.com/iutparis" target="_blank"><img src="./images/icon-twitter.png" alt="Twitter"></a>
+						</ul>
+					</div>
+					<div id="etudiants-personnels">
+						<ul>
+							<li><a href="https://u-paris.fr/bienvenue/" target="_blank">Étudiants</a>
+							<li><a href="https://ent.parisdescartes.fr/" target="_blank">Personnels</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header id ="mainHeader">
+			<div id="mainHeaderContent">
+				<div id="logo">
+					<span id="imgHelper"> </span>
+					<a href="./siteIUT.html"><img src="./images/logo_iut-paris-descartes.png" alt="IUT Paris Descartes" id="logoimg"></a>
+				</div>
+
+				<div id="menu-deroulant">
+					<nav>
+						<ul>
+							<li class="dropdown"><a href="#">L'institut <i class="arrow"></i></a>
+								<ul class="dropdown-content">
+									<li><a href="https://www.iut.parisdescartes.fr/notre-projet/">Notre projet</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/departements-denseignement/">Départements d'enseignement</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/organigramme/">Organigramme</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/travailler-a-liut/">Travailler à l'IUT</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/acces-et-contact/">Accès et contact</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown"><a href="#">Nos formations <i class="arrow"></i></a>
+								<ul class="dropdown-content">
+									<li><a href="https://www.iut.parisdescartes.fr/commerce-et-marketing/">Commerce et marketing </a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/gestion-et-audit/">Gestion et audit</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/information-et-communication/">Information et communication</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/informatique/">Informatique</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/metiers-du-social-socioculturel/">Métiers du social et du socioculturel</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/metiers-de-la-data/">Métiers de la Data</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown"><a href="#">Entreprises et FTLV <i class="arrow"></i></a>
+								<ul  class="dropdown-content">
+									<li><a href="https://www.iut.parisdescartes.fr/lapprentissage/">L'apprentissage</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/la-ftlv/">La FTLV</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/projets-et-stages/">Projets et stages</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/taxe-dapprentissage/">Taxe d'apprentissage</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/le-starter/">Le Starter</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown"><a href="#">International <i class="arrow"></i></a>
+								<ul class="dropdown-content">
+									<li><a href="https://www.iut.parisdescartes.fr/welcome-to-the-iut-of-paris/">Welcome to the IUT of Paris</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/studying-in-paris/">Studying in Paris</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/course-offer/">Course offer</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/partir-a-letranger/">Partir à l'étranger</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown"><a href="#">Vie à l'IUT <i class="arrow"></i></a>
+								<ul class="dropdown-content">
+									<li><a href="https://www.iut.parisdescartes.fr/plateau-technique/">Plateau Technique</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/bibliotheque-de-liut/">Bibliothèque</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/restauration/">Restauration</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/le-jardin-partage/">Le jardin partagé</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/vie-etudiante/">Vie Étudiante à l'IUT</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/cesure/">Année de césure</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/accessibilite-et-handicap/">Accessibilité et handicap</a></li>
+									<li><a href="https://www.iut.parisdescartes.fr/service-social/">Service social</a></li>
+								</ul>
+							</li>
+							<li id="covid"><a href="https://www.iut.parisdescartes.fr/covid-19/">Covid-19</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+<!----------------------------------------------------------------------------------  PARTIE RENTRÉE  ---------------------------------------------------------------------------------->
+		<div id="rentrée">
+			<div class="rentrée2020 invisible">
+				<div class="rtitre">
+					<h1>rentrée 2020</h1>
+				</div>
+				<div class="rentrée_parag1">
+					<p>Futur.e étudiant.e de l’IUT de Paris ? Consultez les modalités
+					d’inscription administrative et les plannings de rentrée</p>
+				</div>
+				<div class="button_info">
+					<a class="btn btn-primary btn1" href ="https://www.iut.parisdescartes.fr/rentree-2020-inscriptions-et-dates-a-retenir/">Plus D'informations </a>
+				</div>
+				<div class="rentrée_parag2">
+					<p>Guide de survie, plan d’orientation, trésor de ressources,
+					le livret de l’étudiant de l’IUT vous dira tout ce dont vous
+					avez besoin pour utiliser au mieux les équipements et les services.
+					</p>
+				</div>
+				<div class="button_info">
+					<a class="btn btn-primary btn1" href ="https://fr.calameo.com/read/001216876217f89f636f2">Livret étudiant de l'iut </a>
+				</div>
+				<div class="button_info">
+					<a class="btn btn-primary btn1 btncovid" href ="https://www.iut.parisdescartes.fr/covid-19/">Covid-19 </a>
+				</div>
+			</div>
+		   <div class="img-iut invisible"></div>
+		</div>
+
+<!----------------------------------------------------------------------------------  PARTIE CANDIDATURES  ---------------------------------------------------------------------------------->
+
+		<div class="section_candidature et_pb_section"> 
+			<div class="et_pb_row title_2">
+				<div class="et_pb_column">
+					<div class="candidature_t_mgp candidature_title_w modulo_animation et_pb_modulo ">
+						<div class="candidature_title">
+							<p>Candidatures 2020-2021</p>  <!-- Titre de secteion candidature -->
+						</div>
+					</div>
+					<div class="et_pb_modulo">
+						<div class="candidature_t_mgp">
+							<h3>Les calendriers de candidature pour les DUT, Licences Professionnelles, Licences 3, Master, Passerelle DEASS et DU sont en ligne !</h3>
+						</div>
+					</div>
+					<div class="et_pb_modulo">
+						<div class="button_info">
+							<a class="btn btn-primary btn2" href ="https://www.iut.parisdescartes.fr/candidater/">Plus D'informations </a> <!-- buttton d'information -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!----------------------------------------------------------------------------------  PARTIE DIPLÔMES  ---------------------------------------------------------------------------------->
+		<div id ="diplome" class="section_diplome et_pb_section">
+			<div class="diplome_anim">
+				<div class="et_pb_row title_2">
+					<div class="section_section_diplome colum_mgm invisible">
+						<p>Diplômes</p>  <!-- Titre de secteion Diplômes -->
+					</div>
+				</div>
+				<div class="et_pb_row et_pb_row2"> <!-- 4 blocs de diplomes-->
+					<div class="diplome_zoom">
+						<div class="et_pb_column column">
+							<div class="dip_row_mgp">
+								<div class="dip_container invisible">
+									<a href="https://www.iut.parisdescartes.fr/accueil/les-dut/">
+										<div class="dip_icons">
+											<span class="icon icon_document"></span>
+										</div>
+										<div class="dip_title">
+											<h4>DUT</h4>
+										</div>
+										<div class="text_taille">
+											<p>L’IUT délivre un diplôme national de niveau bac+2, le DUT, très reconnu dans le monde socio-professionnel</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="dip_row_mgp dip_row_mgm2">
+								<div class="dip_container invisible">
+									<a href="https://www.iut.parisdescartes.fr/accueil/les-licences-professionnelles/">
+										<div class="dip_icons">
+											<span class="icon icon_documents"></span>
+										</div>
+										<div class="dip_title">
+											<h4>Licences Professionnelles</h4>
+										</div>
+										<div class="text_taille">
+											<p>La licence professionnelle, accessible aux étudiants ayant validé 2 années d’études supérieures, permet de se spécialiser et d’obtenir un niveau d’études bac+3</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="dip_row_mgp dip_row_mgm3">
+								<div class="dip_container invisible">
+									<a href="https://www.iut.parisdescartes.fr/accueil/les-du/">
+										<div class="dip_icons">
+											<span class="icon icon_book"></span>
+										</div>
+										<div class="dip_title">
+											<h4>DU</h4>
+										</div>
+										<div class="text_taille">
+											<p>L’IUT délivre des Diplômes d’Université (DU) dans de nombreux domaines de formation afin de former notamment les adultes en reprise d’études</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="dip_row_mgp dip_row_mgm dip_row_mgm2 dip_row_mgm3 dip_row_mgp2">
+								<div class="dip_container invisible">
+									<a href="https://www.iut.parisdescartes.fr/accueil/les-licences-3-et-master/">
+										<div class="dip_icons">
+											<span class="icon icon_clipboard"></span>
+										</div>
+										<div class="dip_title">
+											<h4>Licences 3 et Master</h4>
+										</div>
+										<div class="text_taille">
+											<p>L’IUT de Paris c’est aussi des licences 3 et un Master en partenariat avec d’autres UFR d’Université de Paris.</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!----------------------------------------------------------------------------------PARTIE ACTUALITÉS---------------------------------------------------------------------------------->
+		<div class="section_actualites et_pb_section">
+			<div class="et_pb_row title_2">
+				<div class="actu invisible">
+					<div class="et_pb_modulo">
+						<div class="actualites_title colum_mgp actualites_t_mgp">
+							<p>Actualités</p> <!-- Titre de secteion Actualité -->
+						</div>
+					</div>
+				</div>
+				<div class="actu invisible clearfix">
+					<div class="column-3 actualites_col_1 "> <!-- 3 blocs d'actualite-->
+						<div class="actualites_bloc">
+							<h2><a href="https://www.iut.parisdescartes.fr/rentree-2020-inscriptions-et-dates-a-retenir/">Rentrée 2020 : inscriptions et dates à retenir</a></h2>
+							<p class="actualites_container actualites_site-iut"><a href="https://www.iut.parisdescartes.fr/category/iut/" rel="category tag">IUT</a></p>
+							<p class="actualites_container"> Les inscriptions administratives à l'IUT de Paris auront lieu du 15 juillet au 24 juillet 2020 pour les DUT, Licences professionnelles et Licences 3 en formation initiale, et à compter du 24 août 2020 pour toutes les autres...</p>
+							<div class="actualites_lire-plus">
+								<a href="https://www.iut.parisdescartes.fr/rentree-2020-inscriptions-et-dates-a-retenir/" class="lire-plus">lire plus</a>
+							</div>
+						</div>
+					</div>
+					<div class="column-3 actualites_col_2 ">
+						<div class="actualites_bloc">
+							<div class="image_container">
+								<a href="https://www.iut.parisdescartes.fr/reouverture-bibliotheque/" class="entry-featured-image-url">
+									<img src="images/stock-image-371138106-l-2015.jpg" sizes="(max-width:479px) 479w, 100vw "  width="400" height="250">
+								</a>
+							</div>
+							<h2><a href="https://www.iut.parisdescartes.fr/reouverture-bibliotheque/">Réouverture de la bibliothèque de l’IUT !</a></h2>
+							<p class="actualites_container actualites_site-iut"><a href="https://www.iut.parisdescartes.fr/category/iut/" rel="category tag">IUT</a></p>
+							<p class="actualites_container"> La bibliothèque de l'IUT a rouvert ses portes au public le lundi 7 septembre 2020, aux horaires habituels de 9h à 19h du lundi au vendredi. Néanmoins, étant donné le contexte actuel, des mesures spécifiques ont été mises en place pour la réouverture : 41 places...</p>
+							<div class="actualites_lire-plus">
+								<a href="https://www.iut.parisdescartes.fr/reouverture-bibliotheque/" class="lire-plus">lire plus</a>
+							</div>
+						</div>
+					</div>
+					<div class="column-3 column-3_3 actualites_col_1">
+						<div class="actualites_bloc">
+							<h2><a href="https://www.iut.parisdescartes.fr/examens-2020/">Examens 2020 : les dates à retenir</a></h2>
+							<p class="actualites_container actualites_site-iut"><a href="https://www.iut.parisdescartes.fr/category/iut/" rel="category tag">IUT</a></p>
+							<p class="actualites_container"> Voici les dates d'examens à retenir pour l'année 2020 de la filière CCA : Ces dates sont connues par les étudiant.e.s depuis le 6 mai L3 CCA formation initiale Droit des sociétés, enseignant.e : CHAMBOREDON Date : 2 juin Horaire : 9h30 - 11h30 Contrôle long Droit du...</p>
+							<div class="actualites_lire-plus">
+								<a href="https://www.iut.parisdescartes.fr/examens-2020/" class="lire-plus">lire plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="et_pb_modulo">
+					<div class="button_info">
+						<a class="btn btn-primary btn2" href ="https://www.iut.parisdescartes.fr/category/iut/">Toutes les actcualités </a> <!-- buttton d'information -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!----------------------------------------------------------------------------------PARTIE CHIFFRES---------------------------------------------------------------------------------->
+		<div class="chiffres et_pb_section">
+			<div class="section_chiffres">
+				<div class="et_pb_row_d title_2">
+					<div class="chiffres colum_mgm">
+						<div class="titre_position invisible">
+							<div id="titre_chiffre" class>
+								 <p>L’IUT de Paris en chiffres</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="nombres_et_titres">
+					<div data-scrollReveal>
+						<div class="et_pb_row_d">
+							<div class="et_pb_column column">
+								<div class="info_dip row_mgp">
+									<div class="chiffres_position invisible">
+										<div class="nombres">
+											<span class="counter-count">3000</span>
+										</div>
+										<div class="chiffre_decrit">
+											<h5>Étudiants</h5>
+										</div>
+									</div>
+								</div>
+								<div class="info_dip row_mgp">
+									<div class="chiffres_position invisible">
+										<div class="nombres">
+											<span class="counter-count">1100</span>
+										</div>
+										<div class="chiffre_decrit"><h5>Apprentis et stagiaires de formation continue</h5></div>
+									</div>
+								</div>
+								<div class="info_dip row_mgp">
+									<div class="chiffres_position invisible">
+										<div class="nombres">
+											<span class="counter-count">170</span>
+										</div>
+										<div class="chiffre_decrit">
+											<h5>Enseignants et enseignants-chercheurs</h5>
+										</div>
+									</div>
+
+								</div>
+								<div class="info_dip row mgp">
+									<div class="chiffres_position invisible">
+										<div class="nombres">
+											<span class="counter-count">750</span>
+										</div>
+										<div class="chiffre_decrit">
+											<h5>Intervenants professionnels</h5>
+										</div>
+									</div>
+								</div>
+								<div class="info_dip row mgp">
+									<div class="chiffres_position invisible">
+										<div class="nombres">
+											<span class="counter-count">84</span>
+										</div>
+										<div class="chiffre_decrit">
+											<h5>Personnels administratifs et techniques</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<!----------------------------------------------------------------------------------PARTIE FOOTER---------------------------------------------------------------------------------->
+		<!-- partie footer dans le fichier "page" -->
+		
+		<iframe id="iFrame1" src="pages/footer.html" title="footer" marginheight="0" frameborder="0" ></iframe>
+
+
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/javascript.js"></script>
+</html>

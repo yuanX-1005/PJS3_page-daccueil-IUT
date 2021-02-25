@@ -1,0 +1,1223 @@
+body{
+	color: #666;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.7em;
+	padding : 0;
+	margin : 0;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+@keyframes opaci {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.anim-zoomin {
+    animation: 1.5s ease-out 0s 1 zoomin;
+}
+
+.anim-opaci {
+    animation: 1.7s ease-out 0s 1 opaci;
+}
+
+iframe{
+	width : 100%;
+	border : none;
+	height : 360px;
+}
+@media screen and (max-width: 991px) {
+	iframe{
+		height : 500px;
+	}
+}
+
+@media screen and (max-width: 558px) {
+	iframe{
+		height : 650px;
+	}
+}
+
+div{
+	margin: 0;
+    margin-right: 0px;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+    background-repeat: repeat;
+    background-size: auto;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+a{
+	color: #cf0a2c;
+	text-decoration:none;
+}
+a:link{
+	text-decoration: none;
+}
+
+a:visite{
+	text-decoration: none!important;
+}
+
+a:hover{
+	text-decoration:none!important;
+}
+
+p{
+	margin:0!important;
+	word-wrap: break-word;
+}
+
+h3{
+	margin:0!important;
+	font-weight: 700!important;
+	color: #555;
+	padding: 0px 0px 10px;
+	text-align: left;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 22px!important;
+	line-height: 1.4em!important;
+}
+
+
+
+/*----------------------------------------------------------------------------------  PARTIE RENTRÉE  ----------------------------------------------------------------------------------*/
+
+/*Conteneur rentrée*/
+#rentrée {
+	padding-top: 150px;
+     display: flex;
+ }
+
+
+.rentrée2020 p, h1{
+     transition: all 2s ease;
+}
+
+/*Mise en forme du titre*/
+.rentrée2020 h1 {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #f7f7f7 !important;
+    line-height: 1.3em; /*interligne*/
+    padding-bottom: 10px;
+    text-align: left;
+
+
+}
+
+/*Mise en forme des paragraphe*/
+.rentrée2020 p {
+    font-family: 'Montserrat',sans-serif;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    color: #353740!important;
+    line-height: 1.8em;
+    text-align: left;
+}
+
+.rentrée_parag1{
+    margin: -2em 0 15px 0;
+}
+
+.rentrée_parag2{
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+
+.btncovid{
+    margin-top: 20px;
+}
+
+/*1er élément du conteneur rentrée*/
+.rentrée2020{
+    width : 60%;
+    margin-right: 0;
+	padding: 0 8% 2%;
+	z-index: 9;
+	position: relative;
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    background-color : #eaa903; /*jaune moutarde*/
+    background-image: url(images/fd.png);/*logo opaque iut*/
+ }
+
+/*2er élément du conteneur rentrée*/
+.img-iut {
+    background-image : url(images/iut_accueil.jpg);/* image d'accueil de l'iut*/ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 65%;
+
+ }
+
+/*Mise en forme des boutons du site*/
+ .btn,.btn-primary {
+    padding-top: 4.8px;
+    padding-bottom: 4.8px;
+    border: 2px solid!important;
+    border-radius: 100px!important;
+    background-color: transparent!important;
+    line-height: 1.7em!important;
+    font-size: 16px!important;
+    margin-left: auto;
+    letter-spacing: 2px;
+    font-weight: 700!important;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+}
+
+/*Mise en forme spécifique aux boutons de rentée*/ 
+.btn1{
+    color: #fff!important;
+    border-color: #fff!important;
+}
+
+.btn1::after{
+    content:"▶";
+    font-size: 16px!important;
+    color: #fff;
+    display: none;
+    vertical-align : center;
+}
+
+/*Mise en forme spécifique aux aux autres boutons du site*/ 
+.btn2{
+    color: #eaa903!important;
+    border-color: #eaa903!important;
+}
+
+/* le triangle dans les boutons*/
+.btn2::after{
+    content:"▶";
+    font-size: 16px!important;
+    color: #eaa903;
+    display: none;
+}
+
+/*afficher le triangle au passage de la souris*/
+.btn-primary:hover::after{
+    display: inline-block;
+    transition: all 300ms ease;
+}
+
+.btn1:hover{
+    padding-left: 10px!important;
+}
+
+.btn-primary:hover{
+    transition: all 0.2s!important;
+}
+}
+
+
+/*----------------------------------------------------------------------------------  PARTIE CANDIDATURES  ----------------------------------------------------------------------------------*/
+
+/*Parametres de toutes les sections*/
+.et_pb_section{  
+	font-size: 100%;
+	position: relative;
+	background-color: #fff;
+	background-position: center;
+	background-size: cover;
+}
+
+/*Parametres de differents lignes*/
+.et_pb_row{ 
+	margin: auto;
+	padding: 2% 0;
+	text-align: center;
+	line-height: 1.9em;
+	font-size: 36px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	width: 80%;
+	max-width: 1080px;
+	display: flex;
+	flex-flow:column wrap; /*flexBox en colonne*/
+	flex:1 1 auto;
+	justify-content: space-between;
+}
+
+/*Parametre de colonnes*/
+.et_pb_column{ 
+	float: left;
+	position: relative;
+	z-index: 9;
+	background-position: center;
+	background-size: cover;
+}
+
+/*Largeur de titre candidature*/
+.candidature_title_w{ 
+	max-width: 700px;
+}
+
+/*Couleur de titre*/
+.candidature_title{ 
+	color: #747d88!important;
+}
+
+/*Le margin ajouter*/
+.colum_mgp{
+	margin-bottom:2.75% !important;
+}
+
+/*Le margin diminuer*/
+.colum_mgm{
+	margin:0!important;
+}
+
+
+/*----------------------------------------------------------------------------------  PARTIE DIPLOMES  ----------------------------------------------------------------------------------*/
+
+.section_diplome{ 
+	color:#ffffff!important;
+}
+
+/*Couleur de lien de partie diplome */
+.section_diplome a{
+	color:#ffffff!important;
+}
+
+/*Effet au passage de la souris*/
+.section_diplome a:hover{
+	border: none!important;
+}
+
+/*La ligne du bloc qui contient 4 sous blocs */
+.column {
+	display: flex;
+	flex-flow: row nowrap!important;
+}
+
+/*Les sous blocs de partie diplomes*/
+.column > * {
+	flex: 1 1 0;
+}
+
+/*Partie textes*/
+.dip_container{
+	padding: 30px;
+}
+
+/*La margin augmenter*/
+.dip_row_mgp{
+	margin-right: 3%;
+}
+/*La margin diminuer*/
+.dip_row_mgm{
+	margin-right:0!important;
+}
+
+/*Parametre des icons de partie diplome*/
+.dip_icons{ 
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 30px;
+	line-height: 0;
+}
+
+.icon{
+	display: inline-block;
+	box-sizing: border-box;
+	font-family: "ETmodules";
+	font-size: 96px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1;
+	text-transform: none;
+	content: attr(data-icon);
+}
+
+.icon_document:before{
+	content: "\e058";
+	font-size: 100%;
+}
+
+.icon_documents:before {
+	content: "\e059";
+	font-size: 100%;
+}
+
+.icon_book:before{
+	content: "\e086";
+	font-size: 100%;
+}
+
+.icon_clipboard:before{
+	content: "\e0e6";
+	font-size: 100%;
+}
+
+/*Sous titre de la partie diplome */
+.dip_container h4 {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 1.4em;
+	padding-bottom: 10px;
+	margin:0!important;
+}
+
+/*Les textes de la pertie diplome*/
+.text_taille p {
+	font-size: 16px!important;
+	line-height: 1.8em !important;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 500;
+}
+
+
+/*----------------------------------------------------------------------------------  PARTIE ACTUALITES  ----------------------------------------------------------------------------------*/
+
+.actualites_title { 
+	color:#747d88;
+}
+
+/*Titre des blocs de la partie actualites*/
+.section_actualites h2 {
+	border-left: 4px solid #CF0A2C;
+	padding-left: 12px;
+	line-height: 1.5em;
+	margin-bottom: 20px;
+	vertical-align: middle;
+	padding-bottom: 0;
+	font-weight: 700;
+	word-wrap: break-word;
+	font-size: 18px;
+}
+
+/*Sous titre*/
+.section_actualites h2 a{
+	color: #555!important;
+}
+
+/*Effet au passage de sous titre*/
+.section_actualites h2 a:hover{
+	color:#555!important;
+}
+
+/*lien de l'iut*/
+.actualites_site-iut a{
+	color: #666!important;
+}
+
+/*Effet au passage du lien de l'iut*/
+.actualites_site-iut a:hover{
+	color: #666!important;
+}
+
+/*Texte de la partie actualite*/
+.actualites_container{ 
+	margin-bottom: 6px;
+	font-size: 14px;
+	line-height: 1.7em;
+}
+
+/*Lire plus*/
+.actualites_lire-plus a{
+	color: #cf0a2c!important;
+}
+
+/*Effet au passage de lire plus*/
+.actualites_lire-plus a:hover{
+	color: #cf0a2c!important;
+}
+
+.lire-plus{
+	color: #cf0a2c;
+	line-height: 1.7em;
+	font-size: 14px;
+}
+
+/*3 blocs de la partie actualites */
+.column-3{ 
+	float: left;
+	max-width: 100%!important;
+	width: 29.667%!important;
+	margin-right: 5.5%;
+	text-align:left;
+	margin-bottom: 30px;
+}
+
+/*3eme bloc*/
+.column-3_3{ 
+	margin-right: 0!important;
+}
+
+.actualites_bloc{
+	padding: 19px;
+	border: 1px solid #d8d8d8;
+	background-color: #fff;
+	word-wrap: break-word;
+}
+
+/*Images de la partie actualites*/
+.image_container{ 
+	display: block;
+	position: relative;
+	margin: -20px -20px 29px;
+}
+
+.image_container img{
+	min-width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+/*----------------------------------------------------------------------------------  PARTIE CHIFFRES  ----------------------------------------------------------------------------------*/
+
+.chiffres{
+	font-weight: 700;
+}
+
+
+/*Couleur en arrière plan*/
+.section_chiffres { 
+	color:#353740!important;
+}
+
+.nombres {
+  color:#ffffff!important;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  padding-bottom: 5px;
+}
+
+.chiffres_position {
+  flex: auto;
+}
+
+#titre_chiffre {
+  font-weight: 500;
+}
+
+/*Colonnes chiffres + texte*/
+.info_dip h5 { 
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.4em;
+	padding-bottom: 10px;
+	margin:0!important;
+}
+
+/*Parametres des differentes lignes*/
+.et_pb_row_d{ 
+	margin: auto;
+	padding: 2% 0;
+	text-align: center;
+	line-height: 1.9em;
+	font-size: 36px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	width: 80%;
+	max-width: 2000px;
+	display: flex;
+	flex-flow:column wrap; /*flexBox en colonne*/
+	flex:1 1 auto;
+	justify-content: space-between;
+}
+
+
+/*----------------------------------------------------------------------------------  PARTIE FOOTER  ----------------------------------------------------------------------------------*/
+
+/*Police d'écriture*/
+header, #top-headerH{
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* Couleur en arrière plan*/
+#main-footer{
+	background-color: #cf0a2c;
+}
+
+/*Paramètres des colonnes*/
+.col_footer{
+	padding-top:5%;
+	color:white;
+	padding-bottom: 5%;
+}
+
+.titre_footer{
+	font-size:19px;
+}
+
+.img_footer{
+	height:96px ;
+	width:308px ;
+}
+
+/*----------------------------------------------------------------------------------  PARTIE HAUT DE PAGE  ----------------------------------------------------------------------------------*/
+/*Barre rouge haut de page*/
+#top-headerH {
+	background-color : #cf0a2c!important;
+	display : inline-block!important;
+	color : #fff!important;
+	width : 100%!important;
+	z-index: 9997;
+	position : fixed!important;
+	margin-top : 0!important;
+}
+
+/*Barre Rouge liens*/
+#top-headerH a, #top-headerH a:active, #top-headerH a:visited {
+	text-decoration : none!important;
+	color : inherit!important;
+	padding-bottom : 0.75em!important;
+	transition : 0.4s ease-in-out!important;
+}
+
+/*Barre rouge images (Facebook/Twitter)*/
+#top-headerH img{
+	height : 100%!important;
+	background-size :cover!important;
+	transform: translate(0,7px)!important;
+}
+
+/*Barre rouge animation des lien en hover*/
+#top-headerH img:hover, #top-headerH a:hover{
+	opacity : .7!important;
+}
+
+/*Barre rouge liste (Positionnement des liens)*/
+#top-headerH li{
+	list-style-type:none!important;
+	display : inline!important;
+	height : 24px!important;
+	width : 14px!important;
+	padding-left : 2em!important;
+}
+
+/*Barre rouge liste (Positionnement de la liste)*/
+#top-headerH ul{
+	list-style-type:none!important;
+	display : inline!important;
+	margin : 0!important;
+	padding : 0!important;
+}
+
+/*Barre rouge contenu*/
+#top-headerH .containerH {
+	width: 70%!important;
+	padding : 0 15% 0.75em 15%!important;
+	height : 24px!important;
+}
+
+/*Barre rouges liens*/
+#top-headerH #topbar-links {
+	display : inline!important;
+	float : right!important;
+	margin-top : -9px!important;
+}
+
+/*Barre rouge groupes de liens*/
+#top-headerH #social-media, #etudiants-personnels{
+	display : inline-block!important;
+	font-size : 12px!important;
+	font-weight : 600!important;
+}
+
+/*Barre rouge liste de la div social media*/
+#top-headerH #social-media li{
+	margin-top : -2px!important;
+	margin-left : 12px!important;
+	padding : 0.75em 0 0 0!important;
+	float : right!important;
+}
+
+/*Barre rouge lien de social media*/
+#top-headerH #social-media a{
+	box-sizing : border-box!important;
+	max-width: 100%!important;
+	max-height: 100%!important;
+}
+
+/*Liens du haut de page*/
+#top-headerH a, header a{
+	color : inherit !important;
+	font-weight : 600!important;
+}
+
+
+/*----------------------------------------------------------------------------------  PARTIE HEADER  ----------------------------------------------------------------------------------*/
+
+/*Barre de navigation*/
+header{
+	margin-top : 35px!important;
+	padding-top : 11px!important;
+	position : fixed!important;
+	height : auto!important;
+	width : 100%!important;
+	font-weight : 600!important;
+	border-bottom : 1px solid #eee!important;
+	-webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1) !important;
+	-moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5) !important;
+	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1) !important;
+	z-index: 9997!important;
+	background-color : #fff!important;
+	color: #666;
+}
+
+/*Menu déroulant de la barre de navigation*/
+#menu-deroulant{
+	display : block!important;
+	width : -moz-available!important;
+	width : -webkit-fill-available!important;
+	width : fill-available!important;
+}
+
+/*Contenu de la barre de navigation*/
+#mainHeaderContent{
+	position: relative!important;
+	margin : 0 10% 0 10%!important;
+	display: flex!important;
+	justify-content: space-between!important;
+	align-items: stretch!important;
+	flex-direction: row!important;
+	width : 74%!important;
+	align-items: center!important;
+}
+
+/*Barre de navigation logo*/
+#logo{
+	display: inline-block!important;
+	width : 40%!important;
+}
+
+/*"dropdown" menu, partie déroulante du menu*/
+header li ul {
+	visibility: hidden;
+	z-index: 9999;
+	width: 240px;
+	border-top: 3px solid #cf0a2c!important;
+	background: #fff!important;
+}
+
+/*listes de la barre de navigation*/
+header li{
+	width : auto;
+	text-decoration : none!important;
+	padding : 15px;
+	position: relative;
+	display: inline-block;
+	height : 100%;
+	transition: opacity 0.4s ease-in-out!important;
+}
+
+/*menu déroulant*/
+.dropdown{
+	padding : 40px 18px 40px 15px;
+	transition : padding 0.4;
+	position: relative;
+	display: inline-block;
+}
+
+/*Menu Déroula quand la page est scrollée*/
+.scrolled .dropdown{
+	padding : 15px 18px 15px 15px;
+	font-weight : 400;
+}
+
+/*marge exterieure du menu*/
+header nav>ul{
+	margin:0 15px;
+}
+
+/*liste du dropdown, de la partie déroulante du menu déroulant*/
+header li ul li{
+	width : 210px;
+	transition: background-color 0.4s ease-in-out!important;
+	padding-top : 10px;
+	padding-bottom : 10px;
+}
+
+/*image du header*/
+header #logoimg{
+	max-width: 68%;
+	max-height: 100%;
+	display: block;
+	vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	transition : max-width 0.4;
+}
+
+/*image du header quant scrollée*/
+.scrolled header #logoimg {
+	max-width: 40%;
+}
+
+/*helper de l'image*/
+header #imgHelper {
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/*Menu déroulant*/
+.dropdown {
+}
+/*contenu déroulant du menu déroulant*/
+.dropdown-content{
+	display: absolute;
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 15px;
+	margin-top : 41px;
+	z-index: 9998;
+	visibility : hidden;
+    opacity:0;
+    transition:visibility 0.4s linear,opacity 0.4s linear;
+}
+
+/*partie déroulante du menu déroulant quant scrollée*/
+.scrolled .dropdown-content{
+	margin-top : 16px;
+}
+
+/*parite déroulant du menu déroulant quant le menu déroulant est :hover*/
+.dropdown:hover .dropdown-content {
+	display: absolute;
+	visibility : inherit;
+    opacity:1;
+}
+
+/*boutton covid*/
+header #covid{
+	background-color:#eaa903;
+	padding-bottom : 12px;
+}
+
+/*boutton covid en :hover*/
+header #covid:hover{
+	opacity : 0.7!important;
+}
+
+/*liens des listes du header quant les listes sont :hover*/
+header li:hover>a{
+	opacity : 0.7!important;
+	transition: opacity 0.4s ease-in-out!important;
+}
+
+/*listes du menu déroulant quant elle sont :hover*/
+header li>ul>li:hover{
+	background-color : rgba(0,0,0,0.03)!important;
+}
+
+/*flèches du header*/
+header .arrow {
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(45deg) translate(3px, -5px);
+	-webkit-transform: rotate(45deg) translate(3px, -5px);
+}
+
+
+
+/*----------------------------------------------------------------------------------  L'ECRAN DE TAILLE INFERIEUR À 479px ----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 479px){
+	.title_2{
+		line-height:1.4em;
+		font-size:30px;
+	}
+
+	.et_pb_column{
+		width: 100% !important;
+	}
+
+	.column {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.column > * {
+		flex: auto !important;
+	}
+
+	.dip_row_mgp2{
+		margin-top: 30px!important;
+	}
+	.dip_container{
+		width:100%!important;
+		max-width:100%;
+	}
+
+	.section_actualites h2{
+		font-size: 16px;
+	}
+
+
+
+}
+
+/*----------------------------------------------------------------------------------  L'ECRAN DE TAILLE INFERIEUR À 767px  ----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px){
+	/*actualites*/
+	.column-3{
+		width: 100%!important;
+		margin-right: 0!important;
+		margin-bottom: 9.5%!important;
+	}
+	.actualites_col_1{ /*annuler l'effet flexBox et mettre en float*/
+		float:none!important;
+		width:100%!important;
+	}
+
+	.actualites_col_2{
+		float:none!important;
+		width:100%!important;
+	}
+
+}
+
+/*----------------------------------------------------------------------------------  L'ECRAN DE TAILLE ENTRE 767px ET 980px  ----------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 767px) and (max-width: 980px) {
+	/*actualites*/
+	.actualites_col_1{
+		float: left!important;
+		clear: none;
+		width: 47.25%!important;
+		margin: 0 5.5% 7.5% 0;
+	}
+
+	.actualites_col_2{
+		float: right!important;
+		clear: none;
+		width: 47.25%!important;
+		margin: 0;
+	}
+
+	.clearfix { /*netoyer l'effet float*/
+	  overflow: auto;
+	}
+}
+
+
+/*----------------------------------------------------------------------------------  L'ECRAN DE TAILLE INFERIEUR À 980px  ----------------------------------------------------------------------------------*/
+@media screen and (max-width: 980px) {
+	/*Header*/
+	#logoimg{
+		/*max-width : 50%!important;
+		*/ width : 150px;
+	}
+
+	header{
+		margin-top : 0!important;
+		padding : 10px!important;
+		height : 44px;
+	}
+
+	.scrolled header #logoimg {
+		max-width: 100%;
+	}
+
+	#menu-deroulant{
+		display : none!important;
+		visibility : hidden!important;
+	}
+
+	#top-header{
+		display : none !important;
+	}
+
+
+	/*rentrée*/
+	.rentrée2020{
+   	 background-image: none;
+   	 background-color: transparent;
+   	 padding-top: 50px;
+   	 padding-bottom: 50px;
+   	 width: 100%;
+    }
+	
+    .img-iut {
+   	 display: none;
+    }
+
+    .rentrée2020 h1{
+   	 color: #555!important;
+   	 font-size: 30px;
+   	 font-family: "Open Sans", Arial, sans-serif;
+   	 font-weight: 900;
+   	 padding-bottom: 10px;
+   	 text-align: left;
+   	 margin-bottom: 0px;
+    }
+	
+    .btn{
+   	 color: #CF0A2C!important;
+   	 letter-spacing: 0px!important;
+   	 text-transform: none;
+   	 font-family: "Open Sans", Arial, sans-serif;
+   	 font-size: 20px!important;
+   	 border-radius: 3px!important;
+   	 font-weight: 400!important;
+   	 border-color: #CF0A2C!important;
+   	 padding-top: 6px;
+   	 padding-bottom: 6px;
+   	 padding-left: 20px!important;
+   	 padding-right: 20px!important;
+   	 transition-duration:0.2s;
+
+    }
+	
+    .btn::after{
+   	 content:"▶";
+   	 font-size: 20px!important;
+   	 color: #CF0A2C;
+   	 top: 50px;
+    }
+
+    .btn:hover{
+   	 background-color: #eee!important;
+   	 border-color: transparent!important;
+    }
+
+    .rentrée_parag1{
+   	 margin: 0;
+    }
+
+    .rentrée_parag2{
+   	 padding-top: 0px;
+   	 margin-bottom: 0px;
+    }
+    .rentrée2020 p{
+   	 color: #666!important;
+   	 font-size: 14px;
+   	 font-family: "Open Sans", Arial, sans-serif;
+   	 padding-bottom: 0;
+   	 line-height: 1.7em;
+   	 font-weight: 500;
+    }
+
+
+	/*candidatures*/
+	.et_pb_section {
+		padding: 50px 0;
+	}
+
+	.et_pb_row {
+		max-width: 1080px;
+		padding: 30px 0;
+	}
+
+	.et_pb_column{
+		float: left;
+		position: relative;
+		z-index: 9;
+	}
+
+	.et_pb_modulo{
+		margin-bottom: 30px;
+	}
+
+	.column {
+		display: flex;
+		flex-flow: row wrap!important;
+	}
+
+	.column > * {
+		flex: 0 0 47.25%;
+	}
+
+
+	/*diplomes*/
+	.section_diplome{
+		background-color:#fff!important;
+		color:#666!important;
+	}
+
+	.dip_row_mgp {
+		margin-right: 5.5%;
+		margin-bottom: 30px;
+	}
+
+	.dip_row_mgm2{
+		margin-right:0!important;
+	}
+
+	.dip_row_mgm3{
+		margin-bottom:0!important;
+	}
+	
+	.dip_container{
+		padding: 0px;
+		position: relative;
+		max-width: 550px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.section_diplome a{
+		color:#CF0A2C!important;
+	}
+
+	.dip_container h4{
+		color:#555;
+		font-size:100%;
+	}
+
+	.dip_title{
+		font-size:16px;
+	}
+
+	.text_taille p {
+		font-size: 14px!important;
+		line-height: 1.7em!important;
+		color:#666;
+		font-family: "Open Sans", Arial, sans-serif;
+	}
+
+
+	/*actualites*/
+	.section_actualites .et_pb_row{
+		display:block;
+	}
+
+	.colum_mgp{
+		margin-bottom: 30px!important;
+		padding:0;
+	}
+
+	/*chiffre*/
+	.chiffres .et_pb_section{
+		background-color:#fff!important;
+		color:#747d88 !important;
+	}
+	
+	.section_chiffres{
+		color: #666;
+	}
+	
+	.et_pb_row_d {
+		max-width: 1080px;
+		padding: 30px 0;
+	}
+	
+	#titre_chiffre{
+		font-size:100%;
+		line-height: 1.9em;
+		color:#666;
+	}
+
+	.nombres{
+		color:#666!important;
+		font-size: 72px;
+		font-weight: 500;
+		line-height: 72px;
+		padding-bottom: 20px;
+	}
+	
+	.info_dip h5{
+		padding-bottom: 40px;
+	}
+
+
+}
+
+/*----------------------------------------------------------------------------------  L'ECRAN DE TAILLE SUPERIEURE À 981px  ----------------------------------------------------------------------------------*/
+@media (min-width: 981px){
+	/*candidatures*/
+	.section_candidature{
+		padding-top: 60px;
+		padding-bottom: 60px
+	}
+
+	.et_pb_row{
+		padding: 2% 0;
+		padding-top: 25px !important;
+		padding-bottom: 25px !important;
+	}
+
+	.candidature_t_mgp{
+		margin-bottom: 2.75%;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	/*diplome*/
+	.et_pb_row2{ /*blocs de partie diplomes*/
+		max-width:100%;
+	}
+
+	.section_diplome{
+		padding-top: 60px;
+		padding-bottom: 60px;
+		background-color: #eaa903 !important;
+	}
+
+	.icon{
+		font-size: 60px;
+		color: #ffffff;
+	}
+
+	/*actualites*/
+	.section_actualites{
+		padding-top: 110px;
+		padding-bottom: 5px;
+	}
+	
+	/*margin ajouter*/
+	.actualites_t_mgp{
+		margin-bottom: 2.75%!important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.chiffre{
+		background-color: white!important;
+		color: red !important;
+	}
+	
+	/*chiffre*/
+	.chiffres{
+		background-color:#eaa903;
+		color:#fff;
+	}
+	
+	.chiffre_decrit{
+		text-transform: uppercase;
+	}
+}
